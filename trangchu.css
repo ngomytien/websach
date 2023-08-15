@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.book-list {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    color:#ccc;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+}
+  
