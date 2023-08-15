@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.book-list {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    color:#ccc;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+}
+  
+  
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+  
+
+  
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+  
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+p {
+    margin-bottom: 15px;
+}
+
+  
+form{
+    background-color: #fff;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+input[type="textbox"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Các quy tắc khác bạn có thể thêm vào tùy theo thiết kế của bạn */
+  
