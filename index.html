@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Điện Tử</title>
+    <link rel="stylesheet" href="trangchu.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("search-input");
+      const bookList = document.querySelector(".book-list");
+  
+      searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.toLowerCase();
+        const books = bookList.querySelectorAll(".book");
+  
+        books.forEach(function (book) {
+          const title = book.querySelector("h2").textContent.toLowerCase();
+          if (title.includes(searchTerm)) {
+            book.style.display = "block";
+          } else {
+            book.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+  
+</head>
+<body>
+  <header>
+    <h1>Thư Viện Điện Tử</h1>
+    <nav>
+      <ul>
+        <li><a href="trangchu.html">Trang chủ</a></li>
+        <li><a href="">Danh mục</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+        <li>
+            <input type="text"id="search-input" placeholder="Tìm kiếm sách..."/>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Danh mục</h2>
+      <ul>
+        <li><a href="#">Kỹ Thuật Công Nghệ</a>
+            <ul>
+                <li><a href="#">Công nghệ thông tin</a></li>
+                <li><a href="#">Kỹ thuật xây dựng</a></li>
+                <li><a href="#">Cơ Khí</a></li>
+              </ul>
+        </li>
+        <li><a href="Nông nghiệp"></a>
+            <ul>
+                <li><a href="#">Công nghệ thực phẩm</a></li>
+                <li><a href="#">Nuôi trồng thủy sản</a></li>
+                <li><a href="#">Chăn nuôi</a></li>
+            </ul>
+        </li>
+        <li><a href="">Kinh tế - luật</a>
+            <ul>
+                <li><a href="#">Kế toán</a></li>
+                <li><a href="#">Luật</a></li>
+            </ul>
+        </li>
+        <li><a href="">Lý luận chính trị</a></li>
+      </ul>
+    </div>
+
+    <div class="book-list">
+      <div class="book">
+        <img src="img/congnghieptuonglai.jpg" alt="Công nghiệp tương lai">
+        <h2>Công nghiệp tương lai</h2>
+        <p>Tác giả: Tên tác giả</p>
+      </div>
+      <div class="book">
+        <img src="img/webthaydoitg.jpg" alt="Web thay đổi thế giới như thế nào">
+        <h2>Web thay đổi thế giới như thế nào</h2>
+        <p>Tác giả: Tên tác giả</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <p>Bản quyền © 2023 Thư Viện Điện Tử</p>
+  </footer>
+</body>
+</html>
