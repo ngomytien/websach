@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="lienhe.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const searchInput = document.getElementById("search-input");
+          const bookList = document.querySelector(".book-list");
+      
+          searchInput.addEventListener("input", function () {
+            const searchTerm = searchInput.value.toLowerCase();
+            const books = bookList.querySelectorAll(".book");
+      
+            books.forEach(function (book) {
+              const title = book.querySelector("h2").textContent.toLowerCase();
+              if (title.includes(searchTerm)) {
+                book.style.display = "block";
+              } else {
+                book.style.display = "none";
+              }
+            });
+          });
+        });
+      </script>
+      
+    </head>
+    <body>
+      <header>
+        <h1>Thư Viện Điện Tử</h1>
+        <nav>
+          <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li>
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Tìm kiếm sách..."
+                />
+              </li>
+          </ul>
+        </nav>
+      </header>
+    
+    <div class="content">
+        <h2>Liên Hệ</h2>
+        <p>Nếu bạn có bất kỳ câu hỏi hoặc ý kiến đóng góp, vui lòng liên hệ với chúng tôi bằng cách sử dụng thông tin sau:</p>
+        <ul>
+            <li>Email: Thuviendientu.com</li>
+            <li>Số điện thoại: 1234567890</li>
+            <li>Địa chỉ: Số 71 Phường 5, Tiền Giang</li>
+        </ul>
+    <div class="main">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7624.505673058085!2d106.32252303827123!3d10.424728059698536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310abb77abfeb299%3A0x3047216743107681!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaeG7gW4gR2lhbmcgY8ahIHPhu58gMg!5e0!3m2!1svi!2s!4v1685116428953!5m2!1svi!2s" width="80%" height="450px" style="border:0; margin: 0 auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="formlh">
+    <form action="submit_contact_form.php" method="POST">
+        <label for="name">Họ và tên:</label>
+        <input type="textbox" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Tin nhắn:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Gửi</button>
+    </form>
+    </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Bản quyền © 2023 Thư Viện Điện Tử</p>
+  </footer>
+</body>
+</html>
+
+</body>
+</html>
